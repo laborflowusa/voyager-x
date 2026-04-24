@@ -63,7 +63,7 @@
             resultDiv.style.display = 'none';
             
             try {
-                const response = await fetch(`/.netlify/functions/get_link?user_id=test`);
+                const response = await fetch(`/.netlify/functions/test?user_id=${userId}`);
                 const data = await response.json();
                 
                 if (data.affiliate_link) {
