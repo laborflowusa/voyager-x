@@ -1,0 +1,10 @@
+[build]
+  command = "echo 'Build complete'"
+  functions = "functions"
+  publish = "public"
+
+[functions]
+  node_bundler = "none"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
